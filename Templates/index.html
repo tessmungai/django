@@ -1,0 +1,90 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{%static 'styles.css'%}">
+    <title>My Personal Profile</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Future</a>
+        <button style="background-color: #f0f0f0; color: #333; border: 1px solid #ccc; padding: 5px 10px; cursor: pointer;" onclick="document.body.classList.toggle('dark-mode')">Toggle Dark Mode</button>
+        <style>
+            body.dark-mode {
+                background-color: #333;
+                color: #f0f0f0;
+            }
+        </style>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to My Personal Profile</h1>
+        <p>A showcase of creativity, femininity, intelligence, and advocacy for women and human rights.</p>
+
+        <h2>About Me</h2>
+        <p>Teresia Mungai, a passionate clinician with a tone of IT skills.
+            to be specific i am a data analysts i use data to help health managers, policy makers and boards make the right decision through
+            informed data. by turning big data in healthcare into information that is relevant. This helps to make informed decision, planning 
+            reduce wastage and achieve more precise and realistic policies.
+            that not all I am creative, innovative, femininist, intelligent, and i advocate for women and human rights.</p>
+
+        <h2>Gallery</h2>
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+
+        <h2>Future</h2>
+        <p>Stay tuned for exciting updates!</p>
+    </div>
+<h3>Exciting quotes</h3>
+  {{result}}
+</body>
+   
+</html>
+
